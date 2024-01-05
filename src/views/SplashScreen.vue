@@ -32,6 +32,7 @@ export default {
         generateAuthUrl().then(r => this.authBtnURL = r || "");
     },
     mounted(){
+        console.log(getAuthCookies())
     },
     methods: {
         authenticate(){
